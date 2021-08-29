@@ -131,3 +131,58 @@ function pedirSandwich(
 }
 
 console.log(pedirSandwich("pollo", "blanco", true, false, true));
+
+// =========================================================
+// CONSIGNAS EXTRAS
+
+// CUAL ES EL NUMERO SECRETO
+function adivinarNumeroSecreto(num) {
+  let secretNum = Math.ceil(Math.random() * 10);
+  if (num === secretNum) {
+    return `Felicitaciones, adivinaste el numero secreto ${secretNum}!`;
+  } else {
+    return `Segui intentando! Ingresaste el numero ${num} pero el numero secreto era ${secretNum}!`;
+  }
+}
+
+console.log(adivinarNumeroSecreto(6));
+
+// ABRIR PARACAIDAS
+function abrirParacaidas(velocidad, altura) {
+  if (velocidad < 1000) {
+    if (altura >= 2000 && altura < 3000) {
+      return "Se abre el paracaida";
+    } else {
+      return "No se abre el paracaida";
+    }
+  } else {
+    return "No se abre el paracaida";
+  }
+}
+
+console.log(abrirParacaidas(300, 2000));
+
+// TRADUCTOR CONDICIONAL
+function traductorSimple(string) {
+  switch (string) {
+    case "casa":
+      return "house";
+      break;
+    case "perro":
+      return "dog";
+      break;
+    case "pelota":
+      return "ball";
+      break;
+    case "arbol":
+      return "tree";
+      break;
+    case "genio":
+      return "genius";
+      break;
+    default:
+      return "La palabra ingresada es incorrecta";
+  }
+}
+
+console.log(traductorSimple("pelota"));
