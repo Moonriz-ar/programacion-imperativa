@@ -78,3 +78,5 @@ function compareScore(array1, array2) {
 }
 
 compareScore(asiaScores, euroScores);
+
+//
