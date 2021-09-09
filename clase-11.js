@@ -56,3 +56,14 @@ function sumArray(lista) {
 }
 
 console.log(sumArray([1, 2, 3]));
+
+function sumArray(lista) {
+  let resultado = "";
+  for (let i = 0; i < lista.length; i++) {
+    resultado += lista[i];
+  }
+  return resultado;
+}
+
+lista = ["h", "o", "l", "a"];
+console.log(sumArray(lista));
